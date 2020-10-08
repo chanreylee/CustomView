@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.intretech.customview">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".ui.PictTxtActivity"></activity>
+        <activity android:name=".ui.CanvasActivity" />
+        <activity android:name=".ui.GraphActivity" />
+        <activity android:name=".canvas.ui.DrawOvalActivity" />
+        <activity android:name=".canvas.ui.DrawRoundRectActivity" />
+        <activity android:name=".canvas.ui.DrawRectActivity" />
+        <activity android:name=".canvas.ui.DrawLineActivity" />
+        <activity android:name=".canvas.ui.DrawPointActivity" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
