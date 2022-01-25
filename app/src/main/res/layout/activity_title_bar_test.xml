@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_9B9B9B"
+    tools:context=".ui.widget.TitleBarTestActivity">
+
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/space_10">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <com.intretech.customview.widget.CardItemView
+                        android:id="@+id/cardItemView1"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginStart="@dimen/space_10"
+                        android:layout_marginLeft="@dimen/space_10"
+                        android:layout_marginTop="@dimen/space_10"
+                        android:layout_marginEnd="@dimen/space_10"
+                        android:layout_marginRight="@dimen/space_10"
+                        app:auxiliary="@string/card_item_auxiliary"
+                        app:auxiliaryColor="@color/red"
+                        app:icon="@mipmap/ico_list_number"
+                        app:isDivider="true"
+                        app:itemTitle="@string/card_item_title"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <com.intretech.customview.widget.CardItemView
+                        android:id="@+id/cardItemView2"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginStart="@dimen/space_10"
+                        android:layout_marginLeft="@dimen/space_10"
+                        android:layout_marginTop="@dimen/space_10"
+                        android:layout_marginEnd="@dimen/space_10"
+                        android:layout_marginRight="@dimen/space_10"
+                        app:auxiliary="@string/card_item_auxiliary"
+                        app:auxiliaryColor="@color/red"
+                        app:icon="@mipmap/ico_list_number"
+                        app:isDivider="false"
+                        app:itemTitle="@string/card_item_title"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <com.intretech.customview.widget.TitleBarView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/space_5"
+                app:backIcon="@mipmap/ico_list_number"
+                app:title="@string/tb_title_short" />
+
+            <com.intretech.customview.widget.TitleBarView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/space_5"
+                app:rightText="@string/action_bar_1"
+                app:title="@string/tb_title_short" />
+
+            <com.intretech.customview.widget.TitleBarView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/space_5"
+                app:right2Text="@string/action_bar_2"
+                app:right2TextColor="@color/gray_9B9B9B"
+                app:rightText="@string/action_bar_1"
+                app:rightTextColor="@color/red"
+                app:title="@string/tb_title_short"
+                app:titleColor="@color/teal_200" />
+
+            <com.intretech.customview.widget.TitleBarView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/space_5"
+                app:right2Text="@string/action_bar_2"
+                app:rightText="@string/action_bar_1"
+                app:title="@string/tb_title_length" />
+
+
+            <com.intretech.customview.widget.TitleBarView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/space_5"
+                app:optionIconRight="@mipmap/ico_list_number"
+                app:showOptionIconRight="true"
+                app:title="@string/tb_title_length" />
+
+            <com.intretech.customview.widget.TitleBarView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/space_5"
+                app:optionIconLeft="@mipmap/ic_launcher_round"
+                app:optionIconRight="@mipmap/ico_list_number"
+                app:showOptionIconLeft="true"
+                app:showOptionIconRight="true"
+                app:title="@string/tb_title_length" />
+
+
+            <com.intretech.customview.widget.TitleBarView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/space_5"
+                app:optionIconRight="@mipmap/ico_list_number"
+                app:showOptionIconRight="true"
+                app:title="@string/tb_title_short" />
+
+            <com.intretech.customview.widget.TitleBarView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/space_5"
+                app:optionIconRight="@mipmap/ico_list_number"
+                app:rightText="@string/action_bar_1"
+                app:showOptionIconRight="true"
+                app:title="@string/tb_title_short" />
+
+
+            <com.intretech.customview.widget.TitleBarView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/space_5"
+                app:optionIconLeft="@mipmap/ic_launcher_round"
+                app:optionIconRight="@mipmap/ico_list_number"
+                app:showOptionIconLeft="true"
+                app:showOptionIconRight="true"
+                app:title="@string/tb_title_short" />
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

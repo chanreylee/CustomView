@@ -3,10 +3,9 @@ package com.intretech.customview
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.intretech.customview.canvas.ui.*
-import com.intretech.customview.ui.CanvasActivity
-import com.intretech.customview.ui.GraphActivity
-import com.intretech.customview.ui.PictTxtActivity
+import com.intretech.customview.ui.*
+import com.intretech.customview.ui.bezier.BezierActivity
+import com.intretech.customview.ui.widget.TitleBarTestActivity
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
@@ -32,6 +31,26 @@ class MainActivity : AppCompatActivity() {
 
         btn_draw_pict_txt.setOnClickListener {
             val intent = Intent(this, PictTxtActivity::class.java)
+            startActivity(intent)
+        }
+
+        btn_path_basic.setOnClickListener {
+            val intent = Intent(this, PathActivity::class.java)
+            startActivity(intent)
+        }
+
+        btn_charts.setOnClickListener {
+            val intent = Intent(this, ChartActivity::class.java)
+            startActivity(intent)
+        }
+
+        btn_bezier.setOnClickListener {
+            val intent = Intent(this, BezierActivity::class.java)
+            startActivity(intent)
+        }
+
+        btn_title_bar_test.setOnClickListener {
+            val intent = Intent(this, TitleBarTestActivity::class.java)
             startActivity(intent)
         }
     }

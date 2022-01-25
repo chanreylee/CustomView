@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    tools:ignore="ExtraText">
+    android:shape="rectangle">
+    <solid android:color="#FF065E8D"/>     <!--填充颜色-->
+    <!--圆角度-->
+    <corners
+        android:topLeftRadius="15dip"
+        android:bottomLeftRadius="15dip"
+        />
+</shape>
+
+<!--    android:topRightRadius="8dip"-->
+<!--    android:bottomRightRadius="15dip"-->

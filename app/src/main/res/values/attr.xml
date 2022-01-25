@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="titleView">
+        <attr name="title" format="string" />
+        <attr name="titleSize" format="integer" />
+        <attr name="titleColor" format="color" />
+        <attr name="rightText" format="string" />
+        <attr name="rightTextColor" format="color" />
+        <attr name="right2Text" format="string" />
+        <attr name="right2TextColor" format="color" />
+        <attr name="backIcon" format="reference" />
+        <attr name="background" format="reference" />
+        <attr name="optionIconRight" format="reference"/>
+        <attr name="optionIconLeft" format="reference"/>
+        <attr name="showOptionIconRight" format="boolean"/>
+        <attr name="showOptionIconLeft" format="boolean"/>
+<!--        <attr name="showRedDot" format="boolean" />-->
+    </declare-styleable>
+
+    <declare-styleable name="CardItemView">
+        <attr name="icon" format="reference" />
+        <attr name="itemTitle" format="string" />
+        <attr name="auxiliary" format="string" />
+        <attr name="auxiliaryColor" format="reference" />
+        <attr name="isDivider" format="boolean" />
+    </declare-styleable>
+
+</resources>

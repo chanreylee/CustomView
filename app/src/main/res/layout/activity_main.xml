@@ -33,6 +33,7 @@
                     android:id="@+id/btn_draw_graph"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:background="@drawable/shape"
                     android:text="draw oval" />
             </LinearLayout>
 
@@ -76,6 +77,86 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="draw pict txt" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Path基本操作"
+                    android:textSize="30sp"/>
+
+                <Button
+                    android:id="@+id/btn_path_basic"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="path basic" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="图表"
+                    android:textSize="30sp" />
+
+                <Button
+                    android:id="@+id/btn_charts"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="cahrts" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView11"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textSize="30sp"
+                    android:text="贝塞尔曲线" />
+
+                <Button
+                    android:id="@+id/btn_bezier"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Bezier" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView12"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textSize="30sp"
+                    android:text="标题栏" />
+
+                <Button
+                    android:id="@+id/btn_title_bar_test"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="标题栏" />
             </LinearLayout>
 
         </LinearLayout>

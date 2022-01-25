@@ -1,3 +1,14 @@
 <resources>
     <string name="app_name">CustomView</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="string_placeholder">""</string>
+
+    <string name="card_item_title">Title</string>
+    <string name="card_item_auxiliary">This is auxiliary text</string>
+
+    <string name="tb_title_length">"I am a title bar, do you know it"</string>
+    <string name="tb_title_short">"hello"</string>
+    <string name="action_bar_1">One</string>
+    <string name="action_bar_2">Two</string>
 </resources>

@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.PathActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="500dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView15"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="TextView" />
+                <com.intretech.customview.view.path.PathMeasureView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"></com.intretech.customview.view.path.PathMeasureView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="500dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView14"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="TextView" />
+                <com.intretech.customview.view.path.PathBoundView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"></com.intretech.customview.view.path.PathBoundView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="500dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/布尔操作"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="TextView" />
+                <com.intretech.customview.view.path.PathBoolOp
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"></com.intretech.customview.view.path.PathBoolOp>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="500dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView12"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="填充模式" />
+
+                <com.intretech.customview.view.path.PathOdevity
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"></com.intretech.customview.view.path.PathOdevity>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView9"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="addArc和addTo" />
+
+                <com.intretech.customview.view.path.PathArcView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"></com.intretech.customview.view.path.PathArcView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView8"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="基本图形" />
+                <com.intretech.customview.view.path.PathAddShapes
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"></com.intretech.customview.view.path.PathAddShapes>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView7"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="lastPoint" />
+
+                <com.intretech.customview.view.path.PathLastPointView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"></com.intretech.customview.view.path.PathLastPointView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="moveTo" />
+                <com.intretech.customview.view.path.PathMoveToView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"></com.intretech.customview.view.path.PathMoveToView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="lineTo" />
+
+                <com.intretech.customview.view.path.PathLineToView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"></com.intretech.customview.view.path.PathLineToView>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

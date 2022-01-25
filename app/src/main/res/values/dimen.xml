@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="top_layout_height">60dp</dimen>
+    <dimen name="top_layout_height2">40dp</dimen>
+
+    <dimen name="dot_solid_red_radius">8dp</dimen>
+
+    <dimen name="card_item_height">60dp</dimen>
+
+    <dimen name="space_5">5dp</dimen>
+    <dimen name="space_10">10dp</dimen>
+    <dimen name="space_12">12dp</dimen>
+    <dimen name="space_15">15dp</dimen>
+    <dimen name="space_20">20dp</dimen>
+    <dimen name="space_30">30dp</dimen>
+    <dimen name="space_40">40dp</dimen>
+
+    <dimen name="text_14sp">14sp</dimen>
+    <dimen name="text_16sp">16sp</dimen>
+
+
+    <dimen name="dp8">8dp</dimen>
+    <dimen name="dp10">10dp</dimen>
+    <dimen name="dp24">24dp</dimen>
+
+
+
+
+
+</resources>
