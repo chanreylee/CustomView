@@ -1,60 +1,57 @@
 package com.intretech.customview
 
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.intretech.customview.databinding.ActivityMainBinding
 import com.intretech.customview.ui.*
+import com.intretech.customview.ui.base.BaseBindingActivity
 import com.intretech.customview.ui.bezier.BezierActivity
 import com.intretech.customview.ui.widget.TitleBarTestActivity
-import kotlinx.android.synthetic.main.activity_main.*
 
-class MainActivity : AppCompatActivity() {
-
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
-
+class MainActivity : BaseBindingActivity<ActivityMainBinding>() {
+    
+    override fun initData(savedInstanceState: Bundle?) {
         setListener()
     }
 
     private fun setListener() {
-
-        btn_draw_graph.setOnClickListener {
+        
+        binding.btnDrawGraph.setOnClickListener {
             val intent = Intent(this, GraphActivity::class.java)
             startActivity(intent)
         }
 
-        btn_canvas_operate.setOnClickListener {
+        binding.btnCanvasOperate.setOnClickListener {
             val intent = Intent(this, CanvasActivity::class.java)
             startActivity(intent)
         }
 
-        btn_draw_pict_txt.setOnClickListener {
+        binding.btnDrawPictTxt.setOnClickListener {
             val intent = Intent(this, PictTxtActivity::class.java)
             startActivity(intent)
         }
 
-        btn_path_basic.setOnClickListener {
+        binding.btnPathBasic.setOnClickListener {
             val intent = Intent(this, PathActivity::class.java)
             startActivity(intent)
         }
 
-        btn_charts.setOnClickListener {
+        binding.btnCharts.setOnClickListener {
             val intent = Intent(this, ChartActivity::class.java)
             startActivity(intent)
         }
 
-        btn_bezier.setOnClickListener {
+        binding.btnBezier.setOnClickListener {
             val intent = Intent(this, BezierActivity::class.java)
             startActivity(intent)
         }
 
-        btn_title_bar_test.setOnClickListener {
+        binding.btnTitleBarTest.setOnClickListener {
             val intent = Intent(this, TitleBarTestActivity::class.java)
             startActivity(intent)
         }
 
-        btn_spring_progress_test.setOnClickListener {
+        binding.btnSpringProgressTest.setOnClickListener {
             val intent = Intent(this, SpringProgressActivity::class.java)
             startActivity(intent)
         }
