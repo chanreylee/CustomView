@@ -53,5 +53,10 @@ class MainActivity : AppCompatActivity() {
             val intent = Intent(this, TitleBarTestActivity::class.java)
             startActivity(intent)
         }
+
+        btn_spring_progress_test.setOnClickListener {
+            val intent = Intent(this, SpringProgressActivity::class.java)
+            startActivity(intent)
+        }
     }
 }

@@ -18,6 +18,14 @@
             android:layout_height="wrap_content"
             android:orientation="vertical" >
 
+            <com.intretech.customview.widget.IconTextButton
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_100"
+                android:background="@drawable/shape"
+                app:itbIcon="@mipmap/ico_list_number"
+                app:itbText="@string/tb_title_short"
+                />
+
             <androidx.cardview.widget.CardView
                 android:id="@+id/cardView"
                 android:layout_width="match_parent"

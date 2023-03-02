@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.SpringProgressActivity">
+
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.intretech.customview.view.seekbar.ColorTemperatureSeekBarBase
+                    android:id="@+id/colorTemperatureSeekBar"
+                    android:layout_width="@dimen/dp_100"
+                    android:layout_height="300dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginBottom="32dp"
+                    android:background="@drawable/light_color_temperature_seekbar_gray_bg"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toEndOf="@+id/light_seek_bar"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <com.intretech.customview.view.seekbar.BrightnessSeekBarBase
+                    android:id="@+id/light_seek_bar"
+                    android:layout_width="100dp"
+                    android:layout_height="300dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginBottom="32dp"
+                    android:background="@drawable/light_brightness_seekbar_bg"
+                    android:paddingTop="3dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/colorTemperatureSeekBar"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <com.intretech.customview.view.seekbar.VerticalSeekBarWrapper
+                android:id="@+id/vsbw_roller_blind_controller"
+                android:layout_width="wrap_content"
+                android:layout_height="300dp"
+                android:layout_gravity="center">
+
+                <com.intretech.customview.view.seekbar.VerticalSeekBar
+                    android:id="@+id/vsb_roller_blind_controller"
+                    android:layout_width="300dp"
+                    android:layout_height="100dp"
+                    android:background="@null"
+                    android:maxHeight="300dp"
+                    android:minHeight="90dp"
+                    android:progressDrawable="@drawable/bg_roller_blind_controller"
+                    android:thumb="@drawable/adjustable_light_seek_bar_thumb_2"
+                    android:thumbTintMode="src_in"
+                    android:thumbOffset="-8dp"
+                    android:splitTrack="false"
+                    app:seekBarRotation="CW270" />
+
+            </com.intretech.customview.view.seekbar.VerticalSeekBarWrapper>
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

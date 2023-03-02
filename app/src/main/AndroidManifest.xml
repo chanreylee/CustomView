@@ -10,20 +10,52 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
+            android:name=".ui.other.OthersActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.other.motionlayout.MotionLayoutTestActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.SpringProgressActivity"
+            android:exported="false" />
+        <activity
             android:name=".ui.widget.TitleBarTestActivity"
             android:exported="false" />
-        <activity android:name=".ui.bezier.BezierActivity" android:exported="false" />
-        <activity android:name=".ui.ChartActivity" android:exported="false" />
-        <activity android:name=".ui.PathActivity" android:exported="false" />
-        <activity android:name=".ui.PictTxtActivity" android:exported="false" />
-        <activity android:name=".ui.CanvasActivity" android:exported="false" />
-        <activity android:name=".ui.GraphActivity" android:exported="false" />
-        <activity android:name=".canvas.ui.DrawOvalActivity" android:exported="false" />
-        <activity android:name=".canvas.ui.DrawRoundRectActivity" android:exported="false" />
-        <activity android:name=".canvas.ui.DrawRectActivity" android:exported="false" />
-        <activity android:name=".canvas.ui.DrawLineActivity" android:exported="false" />
-        <activity android:name=".canvas.ui.DrawPointActivity" android:exported="false" />
-        <activity android:name=".MainActivity"
+        <activity
+            android:name=".ui.bezier.BezierActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.ChartActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.PathActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.PictTxtActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.CanvasActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.GraphActivity"
+            android:exported="false" />
+        <activity
+            android:name=".canvas.ui.DrawOvalActivity"
+            android:exported="false" />
+        <activity
+            android:name=".canvas.ui.DrawRoundRectActivity"
+            android:exported="false" />
+        <activity
+            android:name=".canvas.ui.DrawRectActivity"
+            android:exported="false" />
+        <activity
+            android:name=".canvas.ui.DrawLineActivity"
+            android:exported="false" />
+        <activity
+            android:name=".canvas.ui.DrawPointActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

@@ -36,8 +36,8 @@ android {
         jvmTarget = '1.8'
     }
 
-    dataBinding {
-        enabled = true
+    buildFeatures {
+        viewBinding true
     }
 
 }
@@ -55,5 +55,11 @@ dependencies {
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
 
     implementation 'androidx.viewpager2:viewpager2:1.0.0'
+
+    //https://github.com/DylanCaiCoding/ViewBindingKTX/blob/master/README_ZH.md
+    implementation "com.github.DylanCaiCoding.ViewBindingKTX:viewbinding-ktx:2.1.0"
+    implementation "com.github.DylanCaiCoding.ViewBindingKTX:viewbinding-nonreflection-ktx:2.1.0"
+    implementation "com.github.DylanCaiCoding.ViewBindingKTX:viewbinding-base:2.1.0"
+    implementation "com.github.DylanCaiCoding.ViewBindingKTX:viewbinding-brvah:2.1.0"
 
 }

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- 按下状态-->
+    <item
+        android:width="20dp" android:height="8dp"
+        android:drawable="@drawable/icon_roller_blind_controller" android:state_pressed="true" />
+
+    <!-- 有焦点状态 -->
+    <item
+        android:width="20dp" android:height="8dp"
+
+        android:drawable="@drawable/icon_roller_blind_controller" android:state_focused="true" />
+
+    <!-- 普通状态 -->
+    <item
+        android:width="20dp" android:height="8dp"
+
+        android:drawable="@drawable/icon_roller_blind_controller" />
+</selector>

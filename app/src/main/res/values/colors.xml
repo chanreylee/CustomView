@@ -15,4 +15,10 @@
     <color name="transparency">#00000000</color>
     <color name="transparency_gray">#504a4c59</color>
 
+    <!--    调光双色温-->
+    <color name="light_brightness_gradient_end">#fffff4ae</color>
+    <color name="light_brightness_gradient_start">#ffff7e13</color>
+    <color name="light_color_temperature_gradient_end">#ffd8e1ff</color>
+    <color name="light_color_temperature_gradient_start">#ffffa127</color>
+
 </resources>
