@@ -2,7 +2,7 @@ plugins {
     id 'com.android.application'
     id 'kotlin-android'
     id 'kotlin-kapt'
-    id 'kotlin-android-extensions'
+    id 'kotlin-parcelize'
 }
 android {
     compileSdk 31
@@ -45,21 +45,22 @@ android {
 dependencies {
     implementation fileTree(dir: "libs", include: ["*.jar"])
     implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
-    implementation 'androidx.core:core-ktx:1.7.0'
-    implementation 'androidx.appcompat:appcompat:1.4.1'
-    implementation 'androidx.constraintlayout:constraintlayout:2.1.3'
-    implementation 'com.google.android.material:material:1.5.0'
+    implementation 'androidx.core:core-ktx:1.9.0'
+    implementation 'androidx.appcompat:appcompat:1.6.1'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+    implementation 'com.google.android.material:material:1.8.0'
     implementation 'androidx.legacy:legacy-support-v4:1.0.0'
     testImplementation 'junit:junit:4.12'
-    androidTestImplementation 'androidx.test.ext:junit:1.1.3'
-    androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.5'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
 
     implementation 'androidx.viewpager2:viewpager2:1.0.0'
 
     //https://github.com/DylanCaiCoding/ViewBindingKTX/blob/master/README_ZH.md
-    implementation "com.github.DylanCaiCoding.ViewBindingKTX:viewbinding-ktx:2.1.0"
-    implementation "com.github.DylanCaiCoding.ViewBindingKTX:viewbinding-nonreflection-ktx:2.1.0"
-    implementation "com.github.DylanCaiCoding.ViewBindingKTX:viewbinding-base:2.1.0"
-    implementation "com.github.DylanCaiCoding.ViewBindingKTX:viewbinding-brvah:2.1.0"
+    def verViewBindingKtx = "2.1.0"
+    implementation "com.github.DylanCaiCoding.ViewBindingKTX:viewbinding-ktx:$verViewBindingKtx"
+    implementation "com.github.DylanCaiCoding.ViewBindingKTX:viewbinding-nonreflection-ktx:$verViewBindingKtx"
+    implementation "com.github.DylanCaiCoding.ViewBindingKTX:viewbinding-base:$verViewBindingKtx"
+    implementation "com.github.DylanCaiCoding.ViewBindingKTX:viewbinding-brvah:$verViewBindingKtx"
 
 }
